@@ -1,0 +1,39 @@
+﻿<Window x:Class="calculations.MainWindow"
+ 
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+ 
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ 
+xmlns:local="clr-namespace:calculations"
+ 
+mc:Ignorable="d"
+ 
+Title="Podstawowe Działania " Height="450" Width="800">
+
+    <Grid>
+
+        <Label HorizontalAlignment="Center" FontSize="32">Podstawowe Działania</Label>
+
+        <TextBox VerticalContentAlignment="Center" TextAlignment="Center" Name="numberA" Margin="126,177,614,227" Width="60" Height="30">00</TextBox>
+
+        <TextBox VerticalContentAlignment="Center" TextAlignment="Center" Name="numberB" Margin="238,177,502,227" Width="60" Height="30">00</TextBox>
+
+        <Button Width="60" Height="20" Margin="340,154,400,260" Click="AddingNumbers">Dodawanie</Button>
+
+        <Button Width="60" Height="20" Margin="340,214,400,200" Click="SubtractNumbers">Odejmowanie</Button>
+
+        <Button Width="60" Height="20" Margin="502,154,238,260" Click="MultiplyNumbers">Mnożenie</Button>
+
+        <Button Width="60" Height="20" Margin="502,214,238,200" Click="DivideNumbers">Dzielenie</Button>
+
+        <Label VerticalAlignment="Bottom" FontSize="32" HorizontalAlignment="Left" Margin="333,0,0,0">Wynik</Label>
+
+        <Label Name="result" VerticalAlignment="Bottom" FontSize="32" HorizontalAlignment="Center" Margin="420,0,328,0" Width="140">00</Label>
+
+    </Grid>
+
+</Window>
